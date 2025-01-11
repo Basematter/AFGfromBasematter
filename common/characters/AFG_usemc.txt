@@ -1,0 +1,17 @@
+character = {
+	AFG_usemc = {
+		name = usemc
+		portraits = {
+			civilian = {
+				large = GFX_usemc
+			}
+		}
+		field_marshal = {
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 4
+		}
+	}
+}

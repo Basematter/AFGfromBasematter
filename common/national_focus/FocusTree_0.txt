@@ -48,15 +48,36 @@ focus_tree = {
 						}
 					set_party_name = {
 						ideology = fascism
-						long_name = 阿富汗复兴阵线
-						name = 复兴阵线
+						long_name = A_46
+						name = A_47
 					}
 					add_ideas = A_41
 					create_country_leader = {
-						name = AFG_boy
+						name = boy1145141919810
 						picture = GFX_boy
 						ideology = nazism
 					}
+					create_field_marshal = {
+						name = boy1145141919810
+						picture = GFX_boy
+						skill = 5
+						attack_skill = 5
+						defense_skill = 3
+						planning_skill = 4
+						logistics_skill = 5
+						traits = { }
+					}
+					create_field_marshal = {
+						name = use_mc
+						picture = GFX_usemc
+						skill = 6
+						attack_skill = 4
+						defense_skill = 4
+						planning_skill = 6
+						logistics_skill = 4
+						traits = { }
+					}
+					
 				}
 			available = {
 					has_stability > 0.7
@@ -82,8 +103,8 @@ focus_tree = {
 						}
 					set_party_name = {
 						ideology = communism
-						long_name = 阿富汗人民阵线
-						name = 人民阵线
+						long_name = A_44
+						name = A_45
 					}
 					add_ideas = A_42
 				}
@@ -178,7 +199,7 @@ focus_tree = {
 			has_government = fascism
 		}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = AFG_decision_category
 		}
 	}
 	focus = {
@@ -267,6 +288,14 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			add_ideas = A_40
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
 		}
 
 	}
@@ -296,6 +325,11 @@ focus_tree = {
 		}
 		x = 10
 		y = 6
+		available = {
+			has_army_manpower = {
+				size > 60000 
+			}
+		}
 		completion_reward = {
 			add_state_core = 443
 			add_state_core = 444
@@ -390,7 +424,9 @@ focus_tree = {
 		x = 10
 		y = 8
 		completion_reward = {
-			kill_ideology_leader = communism
+			SOV = {
+				kill_ideology_leader = communism
+			}
 		}
 
 	}
@@ -545,6 +581,11 @@ focus_tree = {
 		}
 		x = 4
 		y = 6
+		available = {
+			has_army_manpower = {
+				size > 60000 
+			}
+		}
 		completion_reward = {
 			declare_war_on = {
 				target = RAJ

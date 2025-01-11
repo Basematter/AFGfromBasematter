@@ -1,6 +1,6 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_boy"
+		name = GFX_boy
 		texturefile = "gfx/leaders/boy.dds"
 	}
 }

@@ -8,9 +8,6 @@ character = {
 		}
 		country_leader = {
 			ideology = nazism
-			traits = {
-				FRA_neo_jacobin
-			}
 		}
 		field_marshal = {
 			skill = 5
