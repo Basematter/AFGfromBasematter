@@ -42,7 +42,6 @@ AFG_decision_category = {
 			has_full_control_of_state = 413
 		}
 		remove_effect = {
-			AFG = {
 				add_state_core = 420
 				add_state_core = 419
 				add_state_core = 421
@@ -55,7 +54,6 @@ AFG_decision_category = {
 				add_state_core = 412
 				add_state_core = 413
 				add_manpower = 15000
-			}
 		}
 	}
 }
