@@ -6,6 +6,9 @@ character = {
 				large = GFX_usemc
 			}
 		}
+		country_leader = {
+			ideology = conservatism
+		}
 		field_marshal = {
 			skill = 6
 			attack_skill = 4
