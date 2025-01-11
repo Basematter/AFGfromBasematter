@@ -1,0 +1,55 @@
+ideas = {
+	country = {
+		A_39 = {
+			picture = GFX_idea_A_39
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = 0.1
+				economy_cost_factor = -0.1
+			}
+		}
+		A_40 = {
+			picture = GFX_idea_A_40
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.2
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = 0.1
+				economy_cost_factor = -0.1
+			}
+		}
+		A_41 = {
+			picture = "gfx\interface\goals\goal_generic_support_fascism.dds"
+			modifier = {
+				fascism_drift = 0.05
+			}
+			cancel = {
+				fascism > 0.7
+			}
+		}
+		A_42 = {
+			picture = "gfx\interface\goals\goal_generic_support_communism.dds"
+			modifier = {
+				communism_drift = 0.05
+			}
+			cancel = {
+				communism > 0.7
+			}
+		}
+		A_43 = {
+			picture = GFX_idea_A_43
+			modifier = {
+				political_power_gain = 0.5
+				stability_weekly = 0.05
+				command_power_gain = 0.5
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+}

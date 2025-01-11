@@ -1,0 +1,680 @@
+focus_tree = {
+	id = FocusTree_0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AFG
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 1980
+		y = 800
+	}
+	focus = {
+		id = A_1 
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 2.00
+		x = 8
+		y = 0
+			available = {
+					has_stability > 0.5
+				}
+			completion_reward = {
+				add_stability = 0.4
+				add_ideas = A_43
+			}
+	}
+	focus = {
+		id = A_2
+		icon = GFX_goal_support_fascism
+		cost = 4.00
+		prerequisite = {
+			focus = A_1
+		}
+		mutually_exclusive = {
+			focus = A_3
+		}
+		x = 5
+		y = 1
+			ai_will_do = {
+					base = 0.7
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+					set_party_name = {
+						ideology = fascism
+						long_name = 阿富汗复兴阵线
+						name = 复兴阵线
+					}
+					add_ideas = A_41
+					create_country_leader = {
+						name = AFG_boy
+						picture = GFX_boy
+						ideology = nazism
+					}
+				}
+			available = {
+					has_stability > 0.7
+				}
+
+	}
+	focus = {
+		id = A_3
+		icon = GFX_goal_support_communism
+		cost = 1.00
+		prerequisite = {
+			focus = A_1
+		}
+		mutually_exclusive = {
+			focus = A_2
+		}
+		x = 11
+		y = 1
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+					set_party_name = {
+						ideology = communism
+						long_name = 阿富汗人民阵线
+						name = 人民阵线
+					}
+					add_ideas = A_42
+				}
+			available = {
+					has_stability > 0.7
+				}
+
+	}
+	focus = {
+		id = A_4
+		icon = GFX_goal_generic_demand_territory
+		cost = 2.00
+		prerequisite = {
+			focus = A_2
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_stability = 0.05
+		}
+		available = {
+			fascism > 0.5
+		}
+	}
+	focus = {
+		id = A_5
+		icon = GFX_goal_generic_demand_territory
+		cost = 2.00
+		prerequisite = {
+			focus = A_3
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_stability = 0.05
+			}
+		available = {
+			communism > 0.5
+		}
+		}
+	
+	focus = {
+		id = A_6
+		icon = GFX_goal_generic_territory_or_war
+		cost = 2.00
+		prerequisite = {
+			focus = A_4
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_manpower = -5000
+					add_stability = -0.1
+				}
+		available = {
+			has_government = fascism
+		}
+
+	}
+	focus = {
+		id = A_7
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 2.00
+		prerequisite = {
+			focus = A_6
+		}
+		mutually_exclusive = {
+			focus = A_10
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = A_8
+		icon = GFX_goal_generic_military_deal
+		cost = 2.00
+		prerequisite = {
+			focus = A_7
+		}
+		x = 2
+		y = 5
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = A_9
+		icon = GFX_goal_generic_propaganda
+		cost = 4.00
+		prerequisite = {
+			focus = A_8
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+			add_state_core = 443
+			add_state_core = 444
+			add_state_core = 445
+			add_state_core = 440
+			add_state_core = 442
+
+		}
+	}
+	focus = {
+		id = A_10
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 1.00
+		prerequisite = {
+			focus = A_6
+		}
+		mutually_exclusive = {
+			focus = A_7
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			add_manpower = 5000
+			add_stability = 0.15
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+
+	}
+	focus = {
+		id = A_11
+		icon = GFX_goal_generic_territory_or_war
+		cost = 4.00
+		prerequisite = {
+			focus = A_5
+		}
+		x = 11
+		y = 3
+			completion_reward = {
+					add_manpower = -5000
+					add_stability = -0.1
+				}
+		available = {
+			has_government = communism
+		}
+	}
+	focus = {
+		id = A_12
+		icon = GFX_goal_generic_improve_relations
+		cost = 7.00
+		prerequisite = {
+			focus = A_11
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = A_13
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 3.00
+		prerequisite = {
+			focus = A_12
+		}
+		mutually_exclusive = {
+			focus = A_17
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			add_ideas = A_40
+		}
+
+	}
+	focus = {
+		id = A_14
+		icon = GFX_goal_support_fourth_int
+		cost = 2.00
+		prerequisite = {
+			focus = A_13
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = A_15
+		icon = GFX_goal_generic_propaganda
+		cost = 4.00
+		prerequisite = {
+			focus = A_13
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			add_state_core = 443
+			add_state_core = 444
+			add_state_core = 445
+			add_state_core = 440
+			add_state_core = 442
+			declare_war_on = {
+				target = RAJ
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = A_16
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = A_11
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			add_political_power = 120
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+
+	}
+	focus = {
+		id = A_17
+		icon = GFX_goal_generic_position_armies
+		cost = 5.00
+		prerequisite = {
+			focus = A_16
+		}
+		mutually_exclusive = {
+			focus = A_13
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = A_18
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 3.00
+		prerequisite = {
+			focus = A_17
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = A_19
+		icon = GFX_goal_generic_attack_allies
+		cost = 3.00
+		prerequisite = {
+			focus = A_15
+			focus = A_18
+			focus = A_14
+		}
+		mutually_exclusive = {
+			focus = A_35
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+			send_embargo = SOV
+		}
+
+	}
+	focus = {
+		id = A_20
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 4.00
+		prerequisite = {
+			focus = A_19
+		}
+		mutually_exclusive = {
+			focus = A_21
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+			kill_ideology_leader = communism
+		}
+
+	}
+	focus = {
+		id = A_21
+		icon = GFX_goal_generic_trade
+		cost = 4.00
+		prerequisite = {
+			focus = A_19
+		}
+		mutually_exclusive = {
+			focus = A_20
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = A_22
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 1.00
+		prerequisite = {
+			focus = A_11
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = A_23
+		icon = GFX_goal_generic_propaganda
+		cost = 1.00
+		prerequisite = {
+			focus = A_22
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = A_24
+		icon = GFX_goal_generic_territory_or_war
+		cost = 1.00
+		prerequisite = {
+			focus = A_23
+		}
+		mutually_exclusive = {
+			focus = A_29
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = A_25
+		icon = GFX_goal_generic_small_arms
+		cost = 1.00
+		prerequisite = {
+			focus = A_24
+		}
+		mutually_exclusive = {
+			focus = A_26
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+			add_manpower = -5000
+			add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = A_26
+		icon = GFX_goal_generic_army_artillery2
+		cost = 1.50
+		prerequisite = {
+			focus = A_24
+		}
+		mutually_exclusive = {
+			focus = A_25
+			focus = A_36
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+			add_manpower = -5500
+			add_stability = 0.10
+		}
+
+	}
+	focus = {
+		id = A_27
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = A_10
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = A_28
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 4.00
+		prerequisite = {
+			focus = A_27
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = A_29
+		icon = GFX_goal_generic_demand_territory
+		cost = 1.00
+		prerequisite = {
+			focus = A_23
+		}
+		mutually_exclusive = {
+			focus = A_24
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			add_manpower = -500
+		}
+
+	}
+	focus = {
+		id = A_30
+		icon = GFX_goal_generic_propaganda
+		cost = 4.00
+		prerequisite = {
+			focus = A_8
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = A_31
+		icon = GFX_goal_generic_army_tanks
+		cost = 4.00
+		prerequisite = {
+			focus = A_8
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			declare_war_on = {
+				target = RAJ
+				type = annex_everything
+			}
+
+		}
+	}
+	focus = {
+		id = A_32
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = A_28
+			focus = A_31
+			focus = A_30
+			focus = A_9
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = A_33
+		icon = GFX_goal_generic_major_war
+		cost = 4.00
+		prerequisite = {
+			focus = A_30
+			focus = A_32
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = A_34
+		icon = GFX_goal_generic_improve_relations
+		cost = 3.00
+		prerequisite = {
+			focus = A_32
+			focus = A_20
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_ideas = A_39
+		}
+
+	}
+	focus = {
+		id = A_35
+		icon = GFX_goal_tripartite_pact
+		cost = 2.00
+		prerequisite = {
+			focus = A_15
+			focus = A_18
+			focus = A_14
+		}
+		mutually_exclusive = {
+			focus = A_19
+		}
+		available = {
+			has_government = communism
+		}
+		x = 8
+		y = 7
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = A_36
+		icon = GFX_goal_generic_major_alliance
+		cost = 1.00
+		prerequisite = {
+			focus = A_29
+		}
+		mutually_exclusive = {
+			focus = A_26
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+			add_manpower = -4500
+			add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = A_37
+		icon = GFX_goal_generic_national_unity
+		cost = 7.00
+		prerequisite = {
+			focus = A_34
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = A_38
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 3.00
+		prerequisite = {
+			focus = A_35
+		}
+		x = 8
+		y = 8
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,23 @@
+character = {
+	AFG_boy = {
+		name = boy
+		portraits = {
+			civilian = {
+				large = GFX_boy
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				FRA_neo_jacobin
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+}

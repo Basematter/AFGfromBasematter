@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_A_39
+		texturefile = "gfx\interface\goals\goal_generic_support_fascism.dds"
+	}
+	spriteType = {
+		name = GFX_idea_A_40
+		texturefile = "gfx\interface\goals\goal_generic_support_communism.dds"
+	}
+	spriteType = {
+		name = GFX_idea_A_43
+		textureFile = "gfx\interface\goals\focus_AUS_lawmaking_leniency.dds"
+	}
+	spriteType = {
+		name = GFX_idea_A_41
+		texturefile = "gfx\interface\goals\goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = GFX_idea_A_42
+		texturefile = "gfx\interface\goals\goal_generic_dangerous_deal.dds"
+	}
+}

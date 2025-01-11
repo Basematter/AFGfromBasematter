@@ -1,0 +1,10 @@
+AFG_attack_defense_decision_category = {
+	icon = GFX_idea_A_43
+	available = {
+		or ={
+			has_completed_focus = A_8
+			has_completed_focus = A_35
+		}
+		
+	}
+}
