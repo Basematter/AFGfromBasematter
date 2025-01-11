@@ -52,6 +52,7 @@ AFG_decision_category = {
 			add_state_core = 412
 			add_state_core = 413
 			add_manpower = 15000
+			
 		}
 	}
 }
