@@ -1,0 +1,85 @@
+AFG_core_decision_category = {
+	AFG_core_PER = {
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+			has_full_control_of_state = 420
+			has_full_control_of_state = 419
+			has_full_control_of_state = 421
+			has_full_control_of_state = 417
+			has_full_control_of_state = 266
+			has_full_control_of_state = 418
+			has_full_control_of_state = 416
+			has_full_control_of_state = 414
+			has_full_control_of_state = 410
+			has_full_control_of_state = 412
+			has_full_control_of_state = 413
+		}
+		remove_effect = {
+
+				420 = { add_core_of = AFG }
+				419 = { add_core_of = AFG }
+				421 = { add_core_of = AFG }
+				417 = { add_core_of = AFG }
+				266 = { add_core_of = AFG }
+				418 = { add_core_of = AFG }
+				416 = { add_core_of = AFG }
+				414 = { add_core_of = AFG }
+				410 = { add_core_of = AFG }
+				412 = { add_core_of = AFG }
+				413 = { add_core_of = AFG }
+				411 = { add_core_of = AFG }
+
+				add_manpower = 15000
+		}
+	}
+	AFG_core_IRQ = {
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+			has_full_control_of_state = 291
+			has_full_control_of_state = 675
+			has_full_control_of_state = 676
+		}
+		remove_effect = {
+
+				291 = { add_core_of = AFG }
+				675 = { add_core_of = AFG }
+				676 = { add_core_of = AFG }
+
+				add_manpower = 15000
+		}
+	}
+	AFG_core_SAU = {
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+			has_full_control_of_state = 854
+			has_full_control_of_state = 855
+			has_full_control_of_state = 679
+			has_full_control_of_state = 292
+			has_full_control_of_state = 859
+			has_full_control_of_state = 678
+			has_full_control_of_state = 858
+			has_full_control_of_state = 856
+		}
+		remove_effect = {
+			854 = { add_core_of = AFG }
+			855 = { add_core_of = AFG }
+			679 = { add_core_of = AFG }
+			292 = { add_core_of = AFG }
+			859 = { add_core_of = AFG }
+			678 = { add_core_of = AFG }
+			858 = { add_core_of = AFG }			
+			856 = { add_core_of = AFG }
+
+			add_manpower = 15000
+		}
+	}
+}

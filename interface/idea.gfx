@@ -20,7 +20,7 @@ spriteTypes = {
 		texturefile = "gfx\interface\goals\goal_generic_dangerous_deal.dds"
 	}
 	spriteType = {
-		name = GFX_usemc
+		name = GFX_use
 		texturefile = "gfx/leaders/use.dds"
 	}
 	spriteType = {

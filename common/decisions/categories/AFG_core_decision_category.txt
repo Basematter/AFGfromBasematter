@@ -1,6 +1,6 @@
-AFG_decision_category = {
+AFG_core_decision_category = {
 	icon = GFX_idea_A_43
-	priority = 10
+	priority = 9
 	visible = {
 		always = yes
 	}

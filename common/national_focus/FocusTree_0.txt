@@ -179,11 +179,11 @@ focus_tree = {
 		prerequisite = {
 			focus = A_6
 		}
-		mutually_exclusive = {
-			focus = A_10
-		}
-		x = 4
+		x = 2
 		y = 4
+		completion_reward = {
+			unlock_decision_category_tooltip = AFG_decision_category
+		}
 
 	}
 	focus = {
@@ -199,7 +199,7 @@ focus_tree = {
 			has_government = fascism
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = AFG_decision_category
+			unlock_decision_category_tooltip = AFG_core_decision_category
 		}
 	}
 	focus = {
@@ -212,12 +212,10 @@ focus_tree = {
 		x = 0
 		y = 6
 		completion_reward = {
-			add_state_core = 443
-			add_state_core = 444
-			add_state_core = 445
-			add_state_core = 440
-			add_state_core = 442
-
+			declare_war_on = {
+				target = IRQ
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -226,9 +224,6 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = {
 			focus = A_6
-		}
-		mutually_exclusive = {
-			focus = A_7
 		}
 		x = 6
 		y = 4
@@ -588,7 +583,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			declare_war_on = {
-				target = RAJ
+				target = SAU
 				type = annex_everything
 			}
 

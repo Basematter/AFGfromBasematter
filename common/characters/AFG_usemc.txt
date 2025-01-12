@@ -3,7 +3,7 @@ character = {
 		name = usemc
 		portraits = {
 			civilian = {
-				large = GFX_usemc
+				large = GFX_use
 			}
 		}
 		country_leader = {
