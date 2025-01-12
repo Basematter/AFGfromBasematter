@@ -51,5 +51,43 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
+		A_49 = {
+			picture = GFX_goal_generic_army_tanks
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.35
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				political_power_gain = -0.5
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				monthly_population = 0.05
+				mobilization_speed = 0.1
+				experience_gain_army = 0.3
+				experience_gain_navy = 0.25
+				experience_gain_air = 0.25
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.1
+				army_defence_factor = 0.2
+				army_speed_factor = 0.1
+				army_morale = 0.2
+				land_reinforce_rate = 0.1
+				coordination_bonus = 0.02
+				planning_speed = 0.2
+			}
+		}
+		A_50 = {
+			picture = GFX_goal_generic_small_arms
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.45
+				monthly_population = 0.15
+			}
+		}
+		A_51 = {
+			picture = GFX_goal_generic_forceful_treaty
+			modifier = {
+				research_speed_factor = 0.25
+			}
+		}
 	}
 }

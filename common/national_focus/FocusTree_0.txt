@@ -9,8 +9,8 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = {
-		x = 1980
-		y = 800
+		x = 0
+		y = 1700
 	}
 	focus = {
 		id = A_1 
@@ -183,6 +183,7 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			unlock_decision_category_tooltip = AFG_decision_category
+			add_ideas = A_50
 		}
 
 	}
@@ -521,6 +522,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
+		completion_reward = {
+			add_ideas = A_51
+		}
 
 	}
 	focus = {
@@ -709,6 +713,16 @@ focus_tree = {
 				target = GER
 				type = annex_everything
 			}
+		}
+	}
+	focus = {
+		id = A_48
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4
+		x = 24
+		y = 0
+		completion_reward = { 
+			add_ideas = A_49
 		}
 	}
 }
