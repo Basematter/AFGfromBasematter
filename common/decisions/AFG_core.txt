@@ -68,6 +68,7 @@ AFG_core_decision_category = {
 			has_full_control_of_state = 678
 			has_full_control_of_state = 858
 			has_full_control_of_state = 856
+			has_full_control_of_state = 857
 		}
 		remove_effect = {
 			854 = { add_core_of = AFG }
@@ -78,6 +79,7 @@ AFG_core_decision_category = {
 			678 = { add_core_of = AFG }
 			858 = { add_core_of = AFG }			
 			856 = { add_core_of = AFG }
+			857 = { add_core_of = AFG }
 
 			add_manpower = 15000
 		}
