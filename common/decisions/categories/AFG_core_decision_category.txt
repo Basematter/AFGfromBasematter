@@ -1,6 +1,6 @@
 AFG_core_decision_category = {
 	icon = GFX_idea_A_43
-	priority = 9
+	priority = 10
 	visible = {
 		always = yes
 	}
