@@ -718,12 +718,28 @@ focus_tree = {
 	focus = {
 		id = A_48
 		icon = GFX_goal_generic_army_artillery2
-		cost = 4
+		cost = 8
 		x = 24
 		y = 0
 		completion_reward = { 
 			add_ideas = A_49
 		}
+	}
+	focus = {
+		id = A_52
+		icon = GFX_goal_generic_army_artillery2
+		cost = 8
+		x = 24
+		y = 1
+		prerequisite = {
+			focus = A_48
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = A_49
+				add_idea = A_49_2
+			}
+		 }
 	}
 }
 
