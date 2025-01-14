@@ -52,7 +52,7 @@ ideas = {
 			}
 		}
 		A_49 = {
-			picture = GFX_goal_generic_army_tanks
+			picture = GFX_goal_generic_demand_territory
 			modifier = {
 				conversion_cost_civ_to_mil_factor = -0.3
 				research_speed_factor = 0.1
@@ -77,7 +77,7 @@ ideas = {
 			}
 		}
 		A_49_2 = {
-			picture = GFX_goal_generic_army_tanks
+			picture = GFX_goal_generic_demand_territory
 			modifier = {
 				conversion_cost_civ_to_mil_factor = -0.3
 				research_speed_factor = 0.2
@@ -113,6 +113,14 @@ ideas = {
 			picture = GFX_goal_generic_forceful_treaty
 			modifier = {
 				research_speed_factor = 0.25
+			}
+		}
+		A_55 = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				political_power_gain = 0.05
+				research_speed_factor = -0.1
+				war_support_weekly = 0.05
 			}
 		}
 	}

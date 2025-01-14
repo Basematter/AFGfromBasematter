@@ -1,0 +1,6 @@
+war_has_complrted_focus = {
+	OR = {
+		has_completed_focus = A_32
+		has_completed_focus = A_56
+	}
+}

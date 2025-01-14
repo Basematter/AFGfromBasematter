@@ -66,18 +66,7 @@ focus_tree = {
 						planning_skill = 4
 						logistics_skill = 5
 						traits = { }
-					}
-					create_field_marshal = {
-						name = use_mc
-						picture = GFX_usemc
-						skill = 6
-						attack_skill = 4
-						defense_skill = 4
-						planning_skill = 6
-						logistics_skill = 4
-						traits = { }
-					}
-					
+					}				
 				}
 			available = {
 					has_stability > 0.7
@@ -107,6 +96,21 @@ focus_tree = {
 						name = A_45
 					}
 					add_ideas = A_42
+					create_country_leader = {
+						name = use_mc
+						picture = GFX_usemc
+						ideology = stalinism
+					}
+					create_field_marshal = {
+						name = use_mc
+						picture = GFX_usemc
+						skill = 5
+						attack_skill = 4
+						defense_skill = 4
+						planning_skill = 6
+						logistics_skill = 4
+						traits = { }
+					}
 				}
 			available = {
 					has_stability > 0.7
@@ -120,7 +124,7 @@ focus_tree = {
 		prerequisite = {
 			focus = A_2
 		}
-		x = 5
+		x = 6
 		y = 2
 		completion_reward = {
 			set_politics = {
@@ -134,13 +138,34 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = A_53
+		icon = GFX_goal_generic_demand_territory
+		cost = x3
+		prerequisite = {
+			focus = A_2
+		}
+		x = 4
+		y = 2
+		completion_reward = { 
+			add_timed_idea = {
+				idea = A_55
+				days = 120
+			}
+			start_civil_war = {
+				ideology = neutrality
+				ruling_party = fascism
+			}
+			add_stability = -0.1
+		}
+	}
+	focus = {
 		id = A_5
 		icon = GFX_goal_generic_demand_territory
 		cost = 2.00
 		prerequisite = {
 			focus = A_3
 		}
-		x = 11
+		x = 10
 		y = 2
 		completion_reward = {
 			set_politics = {
@@ -153,13 +178,34 @@ focus_tree = {
 			communism > 0.5
 		}
 		}
-	
+	focus = {
+		id = A_54
+		icon = GFX_goal_generic_demand_territory
+		cost = 3
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = A_3
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = A_55
+				days = 120
+			}
+			start_civil_war = {
+				ideology = neutrality
+				ruling_party = communism
+			}
+			add_stability = -0.1
+		 }
+	}
 	focus = {
 		id = A_6
 		icon = GFX_goal_generic_territory_or_war
 		cost = 2.00
 		prerequisite = {
 			focus = A_4
+			focus = A_53
 		}
 		x = 5
 		y = 3
@@ -248,6 +294,7 @@ focus_tree = {
 		cost = 4.00
 		prerequisite = {
 			focus = A_5
+			focus = A_54
 		}
 		x = 11
 		y = 3
@@ -393,18 +440,23 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		cost = 3.00
 		prerequisite = {
-			focus = A_15
-			focus = A_18
-			focus = A_14
+			focus = A_32
+			focus = A_56
 		}
 		mutually_exclusive = {
 			focus = A_35
 		}
-		x = 11
-		y = 7
+		x = 7
+		y = 8
 		completion_reward = {
 			send_embargo = SOV
+			create_country_leader = {
+				name = use_mc
+				picture = GFX_usemc
+				ideology = marxism
+			}
 		}
+	
 
 	}
 	focus = {
@@ -417,8 +469,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = A_21
 		}
-		x = 10
-		y = 8
+		x = 6
+		y = 9
 		completion_reward = {
 			SOV = {
 				kill_ideology_leader = communism
@@ -436,8 +488,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = A_20
 		}
-		x = 12
-		y = 8
+		x = 8
+		y = 9
 
 	}
 	focus = {
@@ -533,6 +585,9 @@ focus_tree = {
 		cost = 4.00
 		prerequisite = {
 			focus = A_27
+		}
+		completion_reward = {
+			add_stability = 0.05
 		}
 		x = 6
 		y = 6
@@ -633,8 +688,8 @@ focus_tree = {
 			focus = A_32
 			focus = A_20
 		}
-		x = 6
-		y = 9
+		x = 5
+		y = 10
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
@@ -663,8 +718,8 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 8
-		y = 7
+		x = 12
+		y = 8
 		completion_reward = {
 		
 		}
@@ -695,8 +750,8 @@ focus_tree = {
 		prerequisite = {
 			focus = A_34
 		}
-		x = 6
-		y = 10
+		x = 5
+		y = 11
 
 	}
 	focus = {
@@ -706,8 +761,8 @@ focus_tree = {
 		prerequisite = {
 			focus = A_35
 		}
-		x = 8
-		y = 8
+		x = 12
+		y = 9
 		completion_reward = {
 			declare_war_on = {
 				target = GER
@@ -721,6 +776,9 @@ focus_tree = {
 		cost = 8
 		x = 24
 		y = 0
+		available = {
+					war_has_complrted_focus = yes
+			}
 		completion_reward = { 
 			add_ideas = A_49
 		}
@@ -739,6 +797,21 @@ focus_tree = {
 				remove_idea = A_49
 				add_idea = A_49_2
 			}
+		 }
+	}
+	focus = {
+		id = A_56
+		icon = GFX_goal_generic_major_war
+		cost = 4
+		x = 9
+		y = 7
+		prerequisite = {
+			focus = A_14
+			focus = A_15
+			focus = A_18
+		}
+		completion_reward = {
+			add_stability = 0.15
 		 }
 	}
 }

@@ -1,5 +1,6 @@
 AFG_decision_category = {
 	icon = GFX_idea_A_43
+	picture = GFX_war_AFG
 	priority = 12
 	visible = {
 		always = yes

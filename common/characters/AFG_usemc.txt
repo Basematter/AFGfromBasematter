@@ -3,11 +3,11 @@ character = {
 		name = usemc
 		portraits = {
 			civilian = {
-				large = GFX_use
+				large = GFX_usemc
 			}
 		}
 		country_leader = {
-			ideology = conservatism
+			ideology = stalinism
 		}
 		field_marshal = {
 			skill = 6
