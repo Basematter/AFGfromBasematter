@@ -54,11 +54,11 @@ ideas = {
 		A_49 = {
 			picture = GFX_goal_generic_army_tanks
 			modifier = {
-				conversion_cost_civ_to_mil_factor = -0.35
+				conversion_cost_civ_to_mil_factor = -0.3
 				research_speed_factor = 0.1
 				local_resources_factor = 0.1
 				political_power_gain = -0.5
-				production_speed_industrial_complex_factor = 0.25
+				production_speed_industrial_complex_factor = -0.25
 				production_speed_arms_factory_factor = 0.25
 				monthly_population = 0.05
 				mobilization_speed = 0.1
@@ -73,18 +73,19 @@ ideas = {
 				land_reinforce_rate = 0.1
 				coordination_bonus = 0.02
 				planning_speed = 0.2
+				conversion_cost_mil_to_civ_factor = 0.3
 			}
 		}
 		A_49_2 = {
 			picture = GFX_goal_generic_army_tanks
 			modifier = {
-				conversion_cost_civ_to_mil_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.3
 				research_speed_factor = 0.2
 				local_resources_factor = 0.2
 				political_power_gain = -0.25
-				production_speed_industrial_complex_factor = 0.3
+				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = 0.3
-				monthly_population = 0.05
+				monthly_population = 0.35
 				mobilization_speed = 0.1
 				experience_gain_army = 0.3
 				experience_gain_navy = 0.3
@@ -97,6 +98,7 @@ ideas = {
 				land_reinforce_rate = 0.1
 				coordination_bonus = 0.02
 				planning_speed = 0.2
+				conversion_cost_mil_to_civ_factor = 0.25
 			}
 		}
 		A_50 = {
